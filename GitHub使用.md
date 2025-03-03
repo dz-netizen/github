@@ -82,7 +82,9 @@ Writing objects: 100% (4/4), 353 bytes | 353.00 KiB/s, done.
 Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/dz-netizen/github.git
    220636e..8596c93  master -> master
-    
+
+/*如果出现以下报错*/
+       
 ```
 
 #### 4.取消代理
@@ -99,4 +101,24 @@ $ git config --global http.proxy 127.0.0.1:7890/*因为我的代理为7890*/
 $ git config --global https.proxy 127.0.0.1:7890
 ```
 
-#### 
+#### 5.分支、标签、回退
+
+```c
+git branch //查看分支
+git branch <branch-name> //创建新的分支
+git checkout <branch-name> //跳转到某一分支
+git switch <branch-name>  //跳转到某一分支 
+git checkout -b <branch-name> //创建某一分支并跳转
+git merge <branch-name> //合并分支
+```
+
+#### 6.常见
+
+```c
+ls //显示所有文件
+
+当git init 之后如果重新初始化，则删除.git 文件即可
+    
+
+```
+
